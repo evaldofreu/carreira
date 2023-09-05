@@ -14,7 +14,7 @@
 
             <ul class="navbar-nav mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Empresas</a>
+                    <a class="nav-link" href="empresa">Empresas</a>
                 </li>
             </ul>
         </div>
