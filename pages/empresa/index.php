@@ -25,10 +25,19 @@
                </tr> 
           </thead>  
           <tbody>
+            <?php
+              foreach($empresas as $empresa) {
+            ?>
              <tr>
                 <td><a href="#">ETEC Pedro Badran</a></td>
                 <td >(16)3818-2196</td>
              </tr>
+
+            <?php
+              }
+            ?>
+
+
           </tbody>  
     </table>    
 </div>    
