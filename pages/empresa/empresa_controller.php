@@ -17,6 +17,4 @@
      function deletar($id){
 
      }
-
-
 }
