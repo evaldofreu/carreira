@@ -6,7 +6,6 @@
      }
      function listar(){
         $empresas = [];
-
         $empresa = new Empresa();
         $empresa->setId(1);
         $empresa->setNome("ETEC PEDRO BADRAN");
