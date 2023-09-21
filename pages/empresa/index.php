@@ -39,6 +39,6 @@
 
 
     <div id="div-add">
-       <i class="fa fa-plus-square" aria-hidden="true"></i>
+       <a href="empresa/novo"><i class="fa fa-plus" aria-hidden="true"></i></a>
     </div>  
 </div>    
