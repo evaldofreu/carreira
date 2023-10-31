@@ -23,7 +23,11 @@
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-
+    // Atualiza o valor do input geolocalizacao
+    function atualizarInputGeolocalizacao(lat, lon){
+       let inputgeo = document.getElementById("geolocalizacao");
+       inputgeo.value = `{${lat}, ${lon}}`;
+    }
 
     function obterCoordenadasGoogleMaps() {
         const inputEndereco = document.getElementById("endereco");
@@ -40,6 +44,12 @@
                     const coordenadas = data[0];
                     console.log(`Latitude: ${coordenadas.lat}, Longitude: ${coordenadas.lng}`);
                     map.flyTo([coordenadas.lat, coordenadas.lon], 12);
+                    //chamando a função que atualiza as coordenadas
+                    //no formulário    
+                    atualizarInputGeolocalizacao(coordenadas.lat, coordenadas.lon);    
+
+
+
                     L.marker([coordenadas.lat, coordenadas.lon]).addTo(map)
     .bindPopup(nome)
     .openPopup();
