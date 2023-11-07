@@ -9,14 +9,23 @@
         
         
         <div class="mb-3 input-group">
+        <span class="input-group-text">Estado</span>
         <select class="form-select" aria-label="Default select example" id="estados">
             <option selected>Selecione um estado</option>
         </select>
         </div>            
 
+        <div class="mb-3 input-group">
+        <span class="input-group-text">Cidade</span>
+        <select class="form-select" aria-label="Default select example" id="cidade">
+            <option selected>Selecione uma cidade</option>
+        </select>
+        </div>            
+
+
 
         <div class="mb-3 input-group">
-            <span class="input-group-text">Estado</span>
+            
             <!--Incluir os inputs que serão utilizados para enviar a geolocalização  -->        
             <input type="hidden" id="geolocalizacao" name="geolocalizacao" onchange="carregarCidadesIBGE()">
 
